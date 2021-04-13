@@ -296,4 +296,64 @@ footer {
   padding-top: 1em;
 }
 
+@media screen and (max-width: 767px) {
+  header {
+    width: 90%;
+  }
 
+  .main-visual {
+    width: 90%;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+  .images {
+    width: 90%;
+  }
+
+  .Feature {
+    width: 90%;
+  }
+
+  .Profile {
+    width: 90%;
+  }
+
+  .Profile-box {
+    width: 90%;
+  }
+
+  .Profile-bottom {
+    width: 90%;
+  }
+
+  .Profile-show {
+    width: 90%;
+  }
+
+  .Profile-icon {
+    width: 90%;
+  }
+
+  .Profile-icon {
+    width: 90%;
+  }
+
+  .Profile-name {
+    width: 90%;
+  }
+
+  .Profile-1 {
+    width: 90%;
+  }
+
+  .Contact {
+    width: 90%;
+  }
+
+  footer {
+    width: 90%;
+  }
+}
