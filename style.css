@@ -135,6 +135,14 @@ main {
   margin-bottom: 8px;
 }
 
+.Feature-top::after {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  width: 70px;
+  border-bottom: 3px solid #ec715f;
+}
+
 .Feature-text {
   font-size: 16px;
   color: #000000;
@@ -172,118 +180,158 @@ main {
   margin: 0 10px 0 0;
 }
 
-.Profile {
-  width: 100%;
-  background-color: #eceff1;
-  padding: 90px 0;
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  padding-bottom: 90px;
 }
 
-.Profile-box {
+.Profiles {
+  background-color: #eceff1;
+  width: 100%;
+}
+
+.Profile {
   width: 1024px;
+  padding-top: 90px;
   margin: 0 auto;
 }
 
-.Profile-top {
+.Profile-title {
   font-size: 32px;
-  color: #000000;
-  text-align: center;
+  font-weight: bold;
   padding-bottom: 8px;
+  text-align: center;
+}
+
+.Profile-title::after {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  width: 70px;
+  border-bottom: 3px solid #ec715f;
 }
 
 .Profile-text {
+  margin: 30px 0;
   font-size: 16px;
   color: #000000;
-  padding: 30px 0;
   text-align: center;
 }
 
-.Profile-bottom {
-  display: flex;
-}
 .Profile-icon {
+  width: 1024px;
+}
+
+.icon {
   width: 512px;
+  float: left;
+  position: relative;
 }
 
-.Profile-image {
-  text-align: center;
-}
-
-.Profile-image img {
+.icon-image {
+  background-image: url(img/my-icon.jpg);
+  background-position: center;
   border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 25%;
 }
 
-.Profile-show {
+.Profile-content {
   width: 512px;
+  float: right;
 }
 
-.Profile-name {
+.content-title {
   font-size: 20px;
   font-weight: bold;
-  color: #000000;
   padding-bottom: 5px;
 }
 
-.Profile-1 {
-  font-size: 16px;
-  color: #000000;
+.content-text {
   padding-bottom: 20px;
+}
+
+.Contacts {
+  background-color: white;
+  width: 100%;
 }
 
 .Contact {
   width: 800px;
-  padding: 90px;
+  padding-top: 90px;
   margin: 0 auto;
 }
 
-.Contact-top {
+.contact-title {
+  text-align: center;
   font-size: 32px;
-  color: #000000;
+  font-weight: bold;
   padding-bottom: 8px;
-  text-align: center;
 }
 
-.Contact-text {
-  font-size: 16px;
+.contact-title::after {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  width: 70px;
+  border-bottom: 3px solid #ec715f;
+}
+.contact-text {
+  text-align: center;
   padding: 30px 0;
-  text-align: center;
 }
 
-.Contact-bottom {
-  display: flex;
+.contact {
+  width: 800px;
+  float: left;
+  position: relative;
 }
 
-.Contact-left {
+.contact-content {
+  width: 800px;
+}
+
+.contact-cover-left {
   width: 400px;
+  float: left;
+}
+
+.contact-cover-right {
+  width: 400px;
+  float: right;
+}
+
+.contact-left {
+  width: 200px;
   margin: 0 auto;
 }
 
-.Contact-dl {
-  text-align: left;
+.contact-right {
+  width: 200px;
+  margin: 0 auto;
 }
 
-.Contact-subtitle {
+.contact-icon {
+  display: inline-block;
+  font-size: 50px;
+}
+
+.contact-icon:nth-child(3) {
+  padding: 0 20px;
+}
+
+.contact-subtitle {
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 5px;
 }
 
 .mail {
-  border-bottom: 1px #000000;
   padding-bottom: 20px;
-}
-
-.Contact-right {
-  width: 400px;
-  margin: 0 auto;
-}
-
-.right {
-  text-align: left;
-}
-
-.SNS {
-  font-size: 20px;
-  font-weight: bold;
 }
 
 footer {
@@ -301,59 +349,126 @@ footer {
     width: 90%;
   }
 
+  .ham-menu::before {
+    position: absolute;
+    top: 5px;
+    right: 10%;
+    content: "≡";
+    color: #fff;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: #fff 1px solid;
+  }
+
   .main-visual {
     width: 90%;
+    background-image: url(img/code.png);
+    margin: 0 auto;
+  }
+
+  .main-visual-text {
+    font-size: 40px;
+    font-weight: bold;
   }
 
   .main {
     width: 90%;
+    margin: 0 auto;
   }
 
   .images {
     width: 90%;
   }
 
+  .image:nth-child(odd) {
+    display: none;
+  }
+
+  .image:nth-child(even) {
+    margin: 0 auto;
+  }
+
   .Feature {
     width: 90%;
+    margin: 0 auto;
+  }
+
+  .Strengths {
+    margin: 0 auto;
   }
 
   .Profile {
     width: 90%;
-  }
-
-  .Profile-box {
-    width: 90%;
-  }
-
-  .Profile-bottom {
-    width: 90%;
-  }
-
-  .Profile-show {
-    width: 90%;
+    margin: 0 auto;
   }
 
   .Profile-icon {
-    width: 90%;
+    width: 100%;
   }
 
-  .Profile-icon {
-    width: 90%;
+  .icon {
+    width: 100%;
+    height: 1px;
+    float: none;
+    position: static;
   }
 
-  .Profile-name {
-    width: 90%;
+  .icon-image {
+    position: static;
+    margin: 0 auto;
   }
 
-  .Profile-1 {
-    width: 90%;
+  .Profile-content {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .content-title {
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .content-text {
+    text-align: center;
   }
 
   .Contact {
     width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact {
+    float: none;
+    position: static;
+  }
+
+  .contact-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-cover-left,
+  .contact-cover-right {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    margin: 0 auto;
+    position: static;
+    text-align: center;
   }
 
   footer {
-    width: 90%;
+    margin: 0;
   }
 }
