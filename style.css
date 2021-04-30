@@ -69,6 +69,14 @@ main {
   text-align: center;
 }
 
+.main-text1::after {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  width: 70px;
+  border-bottom: 3px solid #ec715f;
+}
+
 .main-text2 {
   font-size: 16px;
   color: #000000;
@@ -346,7 +354,16 @@ footer {
 
 @media screen and (max-width: 767px) {
   header {
-    width: 90%;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0 5%;
+  }
+
+  .nav-list {
+    display: none;
   }
 
   .ham-menu::before {
@@ -364,7 +381,7 @@ footer {
   }
 
   .main-visual {
-    width: 90%;
+    width: 100%;
     background-image: url(img/code.png);
     margin: 0 auto;
   }
@@ -396,7 +413,8 @@ footer {
     margin: 0 auto;
   }
 
-  .Strengths {
+  .Strength {
+    width: 90%;
     margin: 0 auto;
   }
 
